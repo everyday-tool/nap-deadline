@@ -1,0 +1,4 @@
+  File "/home/thanh/.scripts/nap-deadline/main.py", line 30
+    label = f'{hour}:{minute}'
+                             ^
+SyntaxError: invalid syntax
