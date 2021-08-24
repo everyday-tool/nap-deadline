@@ -21,7 +21,7 @@ def compute_time_left():
         for hour, minute in deadlines:
             hour_left = hour - t.hour
             minute_left = minute - t.minute
-            if hour_left < min_hour_left:
+            if hour_left < min_hour_left and hour_left > 0 or (hour_left == 0 and minute_left >= 0):
                 min_hour_left = hour_left
                 min_minute_left = minute_left
         hour_left = min_hour_left
